@@ -1,0 +1,19 @@
+storage1:
+  name: public
+  type: nfs
+  topology: single
+
+web1:
+  name: MollysWorld
+  type: php
+  version : 5.6
+  stability: production
+  php_extensions:
+    - mysqli
+    - mysql
+    - pdo
+    - pdo_mysql
+  network_dirs:
+    storage1:
+      - appArtImages
+   

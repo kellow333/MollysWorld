@@ -1,0 +1,424 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+
+
+
+#loginButton {
+    position: absolute;
+    background: #E854AC;
+    color: white;
+    left: 1%;
+    top: 1%;
+    z-index: 5;
+    width: 100px;
+}
+
+#upload {
+  position: fixed;
+  z-index: 99;
+  font-size: 20px;
+  z-index: 9;
+  left:92%;
+}
+
+#homeButton{
+  position: fixed;
+  bottom: 0;
+  left: 0;  
+  z-index: 12;
+}
+
+
+a:link {
+  color: #E854AC;
+  text-decoration: none;
+}
+
+#welcome {
+  position: fixed;
+  color: #E854AC;
+  width: 20%;
+  height: 10%;
+  z-index: 9;
+  font-size: 30px;
+}
+
+#galleryContainer {  
+  position: relative;
+  width: 200%;
+  height: 100vh;    
+}
+
+/************************** PERSONAL GALLERY ***********************/
+
+#galleryWall1 {
+	position: absolute;
+	width: 150%;
+	height: 100%;
+}
+
+#galleryWall1 img {
+	width: 100%;
+	height: 100%;
+}
+
+#galleryFrame1 {
+	position: absolute;
+	width: 30%;
+	height: 60%;
+	z-index: 2;
+	top: 10%;
+}
+
+#galleryFrame1 img {
+	width: 100%;
+	height: 100%;
+}
+
+#galleryFrame2 {
+	position: absolute;
+	width: 30%;
+	height: 60%;
+	z-index: 2;
+	left: 40%;
+	top: 10%;
+}
+
+#galleryFrame2 img {
+	width: 100%;
+	height: 100%;
+}
+
+#galleryFrame3 {
+	position: absolute;
+	width: 30%;
+	height: 60%;
+	z-index: 2;
+	left: 80%;
+	top: 10%;
+}
+
+#galleryFrame3 img {
+	width: 100%;
+	height: 100%;
+}
+
+#galleryFrame4 {
+	position: absolute;
+	width: 30%;
+	height: 60%;
+	z-index: 2;
+	left: 120%;
+	top: 10%;
+}
+
+#galleryFrame4 img {
+	width: 100%;
+	height: 100%;
+}
+
+#picture1 {
+	position: absolute;	
+	width:19.75%;
+	height:35%;
+	left: 4.75%;
+	top: 24%;
+	z-index: 9;
+}
+
+#picture1 img {
+	height: 100%;
+	width: 100%;
+}
+
+#picture2 {
+	position: absolute;	
+	width:19.75%;
+	height:35%;
+	left: 44.75%;
+	top: 24%;
+	z-index: 9;
+}
+
+#picture2 img {
+	height: 100%;
+	width: 100%;
+}
+
+#picture3 {
+	position: absolute;	
+	width:19.75%;
+	height:35%;
+	left: 84.75%;
+	top: 24%;
+	z-index: 9;
+}
+
+#picture3 img {
+	height: 100%;
+	width: 100%;
+}
+
+#picture4 {
+	position: absolute;	
+	width:19.75%;
+	height:35%;
+	left: 124.75%;
+	top: 24%;
+	z-index: 9;
+}
+
+#picture4 img {
+	height: 100%;
+	width: 100%;
+}
+
+#galleryTV {
+  position: absolute;
+  left: 15%;  
+  bottom: 5%;
+  z-index: 9;
+}
+
+#mollyBack {
+  position: absolute;
+  width: 20%;
+  height: 50%;
+  bottom:0;
+  left: 35%;
+  z-index: 10;
+  opacity: 0;
+  -webkit-animation: mollyMove 4s 4s forwards;  
+  animation: mollyMove 4s 4s forwards;  
+}
+
+
+@-webkit-keyframes mollyMove {
+    from {bottom: -50%; opacity: 1;}
+    to {bottom: 0%; opacity: 1;}
+}
+
+@keyframes mollyMove {
+    from {bottom: -50%; opacity: 1;}
+    to {bottom: 0%; opacity: 1;}
+}
+
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #3FB992;
+  color: white;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #3FB992;
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 0px;
+}
+
+.modalDialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;  
+}
+
+.model-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 70%;
+  max-height: 99vh;
+  margin: 1% auto;
+  padding: 5px 20px 5px 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #E854AC;
+}
+
+.modalDialog:target {
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  opacity:1;
+  pointer-events: auto;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.close {
+  opacity: 1;  
+  line-height: 25px;
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  top: 0px;
+  width: 24px;
+  text-decoration: none;  
+  border-radius: 12px;  
+}
+
+.close:hover { 
+background: #3FB992; 
+}
+
+
+
+#modalImage img {
+  max-width: 70%;
+  max-height: 50%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 2px 16px;    
+}
+
+
+
+
+
+
+/***************************** PUBLIC GALLERY *************************/
+#galleryFrame1Pub {
+  position: absolute;
+  width: 30%;
+  height: 60%;
+  z-index: 2;
+  top: 15%;
+}
+
+#galleryFrame1Pub img {
+  width: 100%;
+  height: 100%;
+}
+
+#galleryFrame2Pub {
+  position: absolute;
+  width: 30%;
+  height: 60%;
+  z-index: 2;
+  left: 40%;
+  top: 15%;
+}
+
+#galleryFrame2Pub img {
+  width: 100%;
+  height: 100%;
+}
+
+#galleryFrame3Pub {
+  position: absolute;
+  width: 30%;
+  height: 60%;
+  z-index: 2;
+  left: 80%;
+  top: 15%;
+}
+
+#galleryFrame3Pub img {
+  width: 100%;
+  height: 100%;
+}
+
+#galleryFrame4Pub {
+  position: absolute;
+  width: 30%;
+  height: 60%;
+  z-index: 2;
+  left: 120%;
+  top: 15%;
+}
+
+#galleryFrame4Pub img {
+  width: 100%;
+  height: 100%;
+}
+
+#picture1Pub {
+  position: absolute; 
+  width:19.75%;
+  height:35%;
+  left: 4.75%;
+  top: 29%;
+  z-index: 9;
+}
+
+#picture1Pub img {
+  height: 100%;
+  width: 100%;
+}
+
+#picture2Pub {
+  position: absolute; 
+  width:19.75%;
+  height:35%;
+  left: 44.75%;
+  top: 29%;
+  z-index: 9;
+}
+
+#picture2Pub img {
+  height: 100%;
+  width: 100%;
+}
+
+#picture3Pub {
+  position: absolute; 
+  width:19.75%;
+  height:35%;
+  left: 84.75%;
+  top: 29%;
+  z-index: 9;
+}
+
+#picture3Pub img {
+  height: 100%;
+  width: 100%;
+}
+
+#picture4Pub {
+  position: absolute; 
+  width:19.75%;
+  height:35%;
+  left: 124.75%;
+  top: 29%;
+  z-index: 9;
+}
+
+#picture4Pub img {
+  height: 100%;
+  width: 100%;
+}
