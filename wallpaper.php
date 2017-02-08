@@ -65,7 +65,7 @@
     <a href="#"><div id="wallpaperButton2" onclick="wallpaperClick2()"></div></a>
     
     
-    <div id="homeButton"><a href="index.php"><img src="assets/images/homeButton.png"></a></div>
+    <div id="homeButton"><a href="studio.php"><img src="assets/images/homeButton.png"></a></div>
 
     <div id="slideshow1">
         <div><img src="assets/images/wallpaper1.png"/></div>

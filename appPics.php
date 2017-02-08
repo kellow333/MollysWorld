@@ -104,7 +104,7 @@
     <div class="x4"><div class="cloud"></div></div>
     <div class="x5"><div class="cloud"></div></div> 
 
-    <div id="homeButton"><a href="index.php"><img src="assets/images/homeButton.png" alt="Home Link"></a></div>
+    <div id="homeButton"><a href="studio.php"><img src="assets/images/homeButton.png" alt="Home Link"></a></div>
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>

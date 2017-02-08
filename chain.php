@@ -80,7 +80,7 @@
                     <p>known as 'sea and sky'</p>
                     <p>- and you can see why!</p>
                     <p>The picture was printed</p>
-                    <p>on <a href="#openModalSilk">silk</a> and laminated</p>
+                    <p>on silk and laminated</p>
                     <p>into <a href="#openModalGlass">glass</a> using special</p>
                     <p>glue to protect it from</p>
                     <p>being faded by the sun</p>

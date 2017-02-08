@@ -19,7 +19,7 @@ function Register() {
 		$sql = $conn->query("SELECT user_id FROM user_login WHERE user_name='$user_name' LIMIT 1");
 		$user_match = $sql->rowCount();
 		if ($user_match > 0){
-			header("location: invalidRegistration.php");
+			echo "<script>location='http://mollys-world.co.uk/invalidRegistration.php'</script>";
 			exit();
 		}
 		
@@ -27,7 +27,7 @@ function Register() {
 		$sql = $conn->query("INSERT INTO user_login(user_name,user_email,user_password) VALUES('$user_name','$user_email','$user_password')") or die(mysql_error());
 		$user_id = mysql_insert_id();
 		
-		header("location:index.php");
+		echo "<script>location='http://mollys-world.co.uk'</script>";
 		exit();
 	}
 }		

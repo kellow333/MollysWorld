@@ -1,5 +1,4 @@
 <?php
-
 function Login() {
 
 	// Parse the login form if fields are filled out and user has clicked login
@@ -26,16 +25,14 @@ function Login() {
 			}
 			$_SESSION["user_id"] = $user_id;
 			$_SESSION["user"] = $user;
-			
-			header("location:index.php");
+			echo "<script>location='http://mollys-world.co.uk'</script>";
 			exit();
 		}else{
-			header("location: invalidLogin.php");		
+			echo "<script>location='http://www.mollys-world.co.uk/invalidLogin.php'</script>";		
 			exit();
 		}
 	}
 }
-
 ?>
 
 
