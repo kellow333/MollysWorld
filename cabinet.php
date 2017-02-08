@@ -31,7 +31,7 @@
     <a href="#openModal20" id="drawer20"></a>
 
 
-    <div id="homeButton"><a href="index.php"><img src="assets/images/homeButton.png" alt="Home Link"></A></div>
+    <div id="homeButton"><a href="museumSelection.php"><img src="assets/images/homeButton.png" alt="Home Link"></A></div>
     
     <div id="openModal18" class="modalDialog">
         <div class="model-content">

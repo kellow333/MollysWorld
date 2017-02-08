@@ -1,5 +1,4 @@
 <?php
-
 function UploadImage() {
 
 	if (isset($_POST['image_title'])){
@@ -19,9 +18,8 @@ function UploadImage() {
 		// Places image in the images folder
 		$new_name = "$image_id.jpg";
 	    move_uploaded_file($_FILES['app_art_image']['tmp_name'],"appArtImages/$new_name");
-	    header("location:gallery.php");
+	    echo "<script>location='http://mollys-world.co.uk/gallery.php'</script>";
 	    exit();
 	}
 }
-
 ?>

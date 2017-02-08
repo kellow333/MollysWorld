@@ -34,14 +34,11 @@
 		<img src="assets/images/galleryFrame.png">
 	</div>
 
-
 	<div id="galleryFrame4Pub">
 		<img src="assets/images/galleryFrame.png">
 	</div>
 
-
-
-	<div id="homeButton"><a href="index.php"><img src="assets/images/homeButton.png"></a></div>
+	<div id="homeButton"><a href="museumSelection.php"><img src="assets/images/homeButton.png"></a></div>
 
 	<a href="#openModal1">
 		<div id="picture1Pub">

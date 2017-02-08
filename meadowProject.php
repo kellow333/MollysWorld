@@ -34,7 +34,7 @@
 
     <a href="#openModal15"><div id="packDownload"></div></a>
 
-    <div id="homeButton"><a href="index.php"><img src="assets/images/homeButton.png"></div>
+    <div id="homeButton"><a href="studio.php"><img src="assets/images/homeButton.png"></div>
 
     <div id="openModal1" class="modalDialogMeadow">
         <div class="model-content">

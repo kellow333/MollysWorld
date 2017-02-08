@@ -23,7 +23,7 @@
 		<div id="galleryFrame3"><img src="assets/images/galleryFrame.png" alt="Gallery Frame"></div>
 		<div id="galleryFrame4"><img src="assets/images/galleryFrame.png" alt="Gallery Frame"></div>
 		<div id="galleryTV"><a href="publicGallery.php"><img src="assets/images/GalleryTV.png" alt="Gallery TV"></a></div>
-		<div id="homeButton"><a href="index.php"><img src="assets/images/homeButton.png" alt="Home Link"></a></div>
+		<div id="homeButton"><a href="museumSelection.php"><img src="assets/images/homeButton.png" alt="Home Link"></a></div>
 
 		<div id="mollyBack"><img src="assets/images/MollyBack.png" alt="Molly"></div>
 		

@@ -1,13 +1,11 @@
-<?php
-
-if(!$_COOKIE['test'] == 'string'){
-    header('Location: splashscreen.php', true, 301);
-    }
-   
-?>
-
 <?php include 'assets/scripts/sessionStart.php' ?> 
 <?php include_once 'assets/scripts/shoppingCartQuantity.php'; CartQuantity(); ?>
+<?php
+if(!$_COOKIE['test'] == 'string'){
+    header('Location: splashscreen.php', true, 301);
+    }   
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
